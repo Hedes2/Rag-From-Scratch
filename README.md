@@ -24,7 +24,7 @@ A custom Retrieval-Augmented Generation (RAG) system specialized for financial d
 
 ### Installation & Execution
 
-```bash
+
 # 1. Pull the LLM
 ollama pull llama3
 
