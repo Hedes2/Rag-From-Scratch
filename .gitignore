@@ -1,0 +1,22 @@
+# Python virtual environment
+myenv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Local data files (too large for GitHub)
+corpus.jsonl
+queries.jsonl
+qrels/
+
+# Model weights and database (too large for GitHub)
+rag_encoder_trained.pth
+finance_vector_db.pt
+
+# Project Specific
+hf-strategies.pdf
+
+# OS generated files
+.DS_Store
+Thumbs.db
