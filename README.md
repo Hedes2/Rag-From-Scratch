@@ -24,20 +24,16 @@ A custom Retrieval-Augmented Generation (RAG) system specialized for financial d
 
 ### Installation & Execution
 
-
-# 1. Pull the LLM
+```
 ollama pull llama3
 
-# 2. Clone and Install
 git clone [https://github.com/yourusername/financial-rag.git](https://github.com/yourusername/financial-rag.git)
 cd financial-rag
 pip install torch transformers streamlit PyPDF2 requests
 
-# 3. Run the App
 streamlit run app.py
-
-
-
+Repository Structure
+Plaintext
 .
 ├── app.py             # Streamlit UI
 ├── model.py           # Custom PyTorch RAGEncoder architecture
@@ -45,3 +41,11 @@ streamlit run app.py
 ├── ragpipeline.py     # PDF parsing and vector indexing
 ├── train.py           # Training pipeline
 └── dataset.py         # FiQA data loading
+Future Roadmap
+[ ] Increase sequence length for broader context.
+
+[ ] Implement context-aware chunking for financial reports.
+
+[ ] Migrate to FAISS or ChromaDB for production vector storage.
+
+[ ] Add CSV/Excel parsing support.
